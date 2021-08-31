@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NguyenThiLy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+        <a href="#" class="logo"><img src="logolyy.jpg"></a>
+        <div class="toggle" onClick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100010238833405&sk=about_life_events">Contact</a></li>
+        </ul>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just one People Loner<br>It's Very Lonely  <span>NguyenThiLy</span> </h2>
+                <p>Xin chào các bạn. Mình tên là Lyy, 20 tuổi nhưng có thể bẻ gãy sừng trâu trước khi 20 tuổi. Mình mạnh mẽ và luôn quan tâm đến mọi người. Nếu bạn cô đơn quá lâu, hãy làm quen với mình.</p>
+                <a href="https://www.facebook.com/profile.php?id=100010238833405&sk=about_life_events"><img src="facebook.png"></a>
+                <a href="https://www.instagram.com/_lynguyenly_/?fbclid=IwAR1Iy1dW5ol7FSTD-TAtIKvYIsF8kE_cWd6E86irsPspXWBCz03H0R7FtTs"><img src="instagram.png"></a>
+
+            </div>
+            <div class="imgBox">
+                <img src="lyly.png" class="toto">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="thumb1.png" onClick="imgSlider('lyly.png');changeCircleColor('#F28177')"></li>
+        </ul>
+
+
+
+        
+
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.toto').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>
+
+
+  
+    
+</body>
+</html>
